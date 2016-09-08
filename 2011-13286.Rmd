@@ -1,0 +1,27 @@
+---
+title: "HW1"
+author: "minjaehee"
+date: "2016³â 9¿ù 8ÀÏ"
+output: html_document
+---
+
+```{r data, results='hide'}
+data(airquality)
+attach(airquality)
+x<-airquality$Wind
+y<-airquality$Ozone
+
+```
+
+## Data airquality
+
+
+
+
+```{r regression}
+
+summary(lm(y~x))
+plot(lm(y~x))
+```
+
+
